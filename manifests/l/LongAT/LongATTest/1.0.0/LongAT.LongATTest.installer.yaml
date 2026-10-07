@@ -1,0 +1,25 @@
+# Created using wingetcreate 1.12.8.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.6.0.schema.json
+
+PackageIdentifier: LongAT.LongATTest
+PackageVersion: 1.0.0
+InstallerType: inno
+Scope: user
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+Commands:
+- LongATTest
+AppsAndFeaturesEntries:
+- DisplayName: Long AT Test version 1.0.0
+  Publisher: Long AT
+  DisplayVersion: 1.0.0
+  ProductCode: '{9F573DF1-0F46-4B83-9B3B-8C6BE76A96C2}_is1'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/vulongvy/LongATTest/releases/download/v1.0.0/LongATTest-Setup-1.0.0.exe
+  InstallerSha256: 5D5D686739029D6C34E6972DA15832C41DB838C38DEC3C3A18AB3FB35C22757E
+ManifestType: installer
+ManifestVersion: 1.6.0
